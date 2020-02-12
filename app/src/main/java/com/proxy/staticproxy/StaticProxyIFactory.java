@@ -40,6 +40,24 @@ public class StaticProxyIFactory implements IToolFactory {
         }.start();
     }
 
+    @Override
+    public void secondMethod() {
+        doBefore();
+        new CountDownTimer(3000, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+                if (millisUntilFinished < 2000 && millisUntilFinished > 1000) {
+                    iToolFactory.secondMethod();
+                }
+            }
+
+            @Override
+            public void onFinish() {
+                doAfter();
+            }
+        }.start();
+    }
+
     private void doAfter() {
         Log.d("Ysw", "doAfter: 静态代理类被代理之后的工作");
         Toast.makeText(APP.getContext(), "doAfter: 静态代理类被代理之后的工作", Toast.LENGTH_SHORT).show();

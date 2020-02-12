@@ -11,7 +11,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="staticProxy"
-        android:text="静态代理"
+        android:text="静态代理(方法一)"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="staticProxyTwo"
+        android:text="静态代理(方法二)"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30sp" />
 
@@ -19,7 +27,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="dynamicProxy"
-        android:text="动态代理"
+        android:text="动态代理(方法一)"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="dynamicProxyTwo"
+        android:text="动态代理(方法二)"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30sp" />
 

@@ -5,4 +5,6 @@ package com.proxy.interf;
  */
 public interface IToolFactory {
     void makeProduct();
+
+    void secondMethod();
 }

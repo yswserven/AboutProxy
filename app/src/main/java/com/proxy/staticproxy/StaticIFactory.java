@@ -15,4 +15,10 @@ public class StaticIFactory implements IToolFactory {
         Log.d("Ysw", "makeProduct: 这个是被代理的对象");
         Toast.makeText(APP.getContext(), "makeProduct: 这个是被代理的对象", Toast.LENGTH_SHORT).show();
     }
+
+    @Override
+    public void secondMethod() {
+        Log.d("Ysw", "secondMethod: 这个是被代理的对象");
+        Toast.makeText(APP.getContext(), "secondMethod: 这个是被代理的对象", Toast.LENGTH_SHORT).show();
+    }
 }
